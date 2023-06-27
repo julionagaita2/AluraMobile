@@ -1,37 +1,106 @@
-body{
+body {
     margin: 0;
-}
-@media (max-width: 428px){
-    header{
+  }
+  
+  @media (max-width: 428px) {
+    body {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    header {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 80px;
+      background-color: white;
+    }
+  
+    #menu {
+      padding-right: 24px;
+      padding-left: 24px;
+    }
+  
+    #sacola {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    #logoA {
+      margin-right: 150px;
+    }
+  
+    #favoritos,
+    #sacola,
+    #usuario,
+    #logo {
+      width: 40px;
+    }
+  
+    #menu {
+      width: 48px;
+    }
+  
+    #main {
+      
+      width: 100%;
+      height: 215px;
+      background-image: url(./img/Frame2.jpg);
+      background-size: cover;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .p1 {
+      margin-top: 20px;
+      
+      font-size: 18px;
+      
+      font-weight: 1000;
+      height: 27px;
+    }
+  
+    .p2 {
+        margin-top: 0px;
+      font-size: 16px;
+      height: 48px;
+      width: 316px;
+      
+      
+    }
+    #divPesquisa{
         display: flex;
-        align-items: center;
-        width: 428px;
-        height: 80px;
-        background-color: white;
-        
-    }
-    #favoritos, #sacola, #usuario, #logo{
-        width: 40px;
-    }
-    #menu{
-        width: 48px;
-    }
-    #main{
-        padding-top: 32px;
-        width: 428px;
-        height: 215px;
-        background-image: url(./img/Frame.svg);
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
         text-align: center;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px white;
+        width: 380px;
+        height: 44px;
+        border-radius: 50px;
         
     }
-    .p1{
-        font-size: 18px;
-        font-weight: bold;
+    #searchBar{
+        border: none;
+        background-color: transparent;
+        width: 214px;
+        height: 21px;
+        color: white;
+        text-align: center;    
     }
-    .p2{
-        font-size: 16px;
+    #searchBar::placeholder{
+        color: white;
+        font-size: 14px;
+    }
+    #searchBar:focus{
+        outline: none;
         
     }
-}
+    #container2{
+        height: 676px;
+        width: 428px;
+    }  
+  }
+  
